@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Greenglanz – Fahrzeugaufbereitung mit Nanotechnologie</title>
-  <meta name="description" content="Premium Fahrzeugaufbereitung mit Nanotechnologie. 90% weniger Wasserverbrauch. Neon-sauber, klimafreundlich, molekular versiegelt." />
+  <title>Greenglanz Mobility – Mobile Fahrzeugaufbereitung</title>
+  <meta name="description" content="Greenglanz Mobility – Mobile Fahrzeugaufbereitung. Innen- & Außenreinigung mit Nanotechnologie. 90% weniger Wasser. Klimafreundlich." />
   <link rel="stylesheet" href="fv-styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,11 +12,8 @@
 </head>
 <body>
 
-  <!-- Custom Cursor -->
   <div class="cur" id="cur"></div>
   <div class="cur-ring" id="curRing"></div>
-
-  <!-- Scroll Progress -->
   <div class="scroll-prog" id="scrollProg"></div>
 
   <!-- Loader -->
@@ -31,10 +28,8 @@
         </svg>
         <div class="drop-glow"></div>
       </div>
-      <div class="loader-brand">
-        <span class="lb-green">Green</span><span class="lb-dark">glanz</span>
-      </div>
-      <div class="loader-sub">Fahrzeugaufbereitung</div>
+      <!-- Logo image in loader -->
+      <img src="logo.jpeg" alt="Greenglanz Mobility" class="loader-logo-img" />
       <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
     </div>
   </div>
@@ -42,24 +37,15 @@
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <div class="nl-icon">
-          <svg viewBox="0 0 32 42" fill="none">
-            <path d="M16 3 C16 3 30 16 30 26 C30 34.8 23.7 39 16 39 C8.3 39 2 34.8 2 26 C2 16 16 3 16 3Z"
-              stroke="currentColor" stroke-width="1.5" fill="none"/>
-            <path d="M16 39 L16 43" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="nl-text">
-          <div class="nl-name"><span class="nl-g">Green</span><span class="nl-gl">glanz</span></div>
-          <span class="nl-sub">Fahrzeugaufbereitung</span>
-        </div>
+      <!-- LOGO: Bild eingebunden. Datei "logo.jpeg" im selben Ordner ablegen -->
+      <a href="#hero" class="nav-logo-img-wrap">
+        <img src="logo.jpeg" alt="Greenglanz Mobility" class="nav-logo-img" />
       </a>
 
       <ul class="nav-links">
-        <li><a href="#pakete">Pakete</a></li>
+        <li><a href="#innen">Innenreinigung</a></li>
+        <li><a href="#aussen">Außenreinigung</a></li>
         <li><a href="#nano">Nanotechnologie</a></li>
-        <li><a href="#prozess">Ablauf</a></li>
         <li><a href="#preise">Preise</a></li>
         <li><a href="#kontakt" class="nav-cta">Termin buchen</a></li>
       </ul>
@@ -73,9 +59,9 @@
   <!-- Mobile Menu -->
   <div class="mob-menu" id="mobMenu">
     <div class="mm-links">
-      <a href="#pakete">Pakete</a>
+      <a href="#innen">Innenreinigung</a>
+      <a href="#aussen">Außenreinigung</a>
       <a href="#nano">Nanotechnologie</a>
-      <a href="#prozess">Ablauf</a>
       <a href="#preise">Preise</a>
       <a href="#kontakt">Termin buchen</a>
     </div>
@@ -87,31 +73,27 @@
   <!-- ═══ HERO ════════════════════════════════════ -->
   <section class="hero" id="hero">
     <canvas class="hero-canvas" id="heroCanvas"></canvas>
-
-    <!-- Animated background blobs -->
     <div class="hero-blob b1"></div>
     <div class="hero-blob b2"></div>
     <div class="hero-blob b3"></div>
-
-    <!-- Neon grid lines -->
     <div class="hero-grid"></div>
 
     <div class="hero-left">
       <div class="hero-eyebrow" data-reveal>
         <span class="eyebrow-pulse"></span>
-        <span>Nanotechnologie · 90% weniger Wasser · CO₂-neutral</span>
+        <span>Mobile Aufbereitung · Nanotechnologie · CO₂-neutral</span>
       </div>
 
       <h1 class="hero-title" data-reveal data-delay="60">
-        <span class="ht-line">Ihr Fahrzeug.</span>
-        <span class="ht-line ht-neon">Neon-<em>sauber.</em></span>
-        <span class="ht-line ht-sub">Molekular geschützt.</span>
+        <span class="ht-line">Mobil sauber.</span>
+        <span class="ht-line ht-neon">Neon-<em>glänzend.</em></span>
+        <span class="ht-line ht-sub">Nachhaltig unterwegs.</span>
       </h1>
 
       <p class="hero-desc" data-reveal data-delay="140">
-        Modernste SiO₂-Nanotechnologie versiegelt Ihren Lack auf molekularer Ebene.
-        Langanhaltend, kratzresistent — und mit <strong>90% weniger Wasserverbrauch</strong>
-        als herkömmliche Methoden.
+        Greenglanz Mobility kommt zu Ihnen — professionelle Innen- und Außenreinigung
+        direkt vor Ihrer Tür. Mit modernster Nanotechnologie und
+        <strong>90% weniger Wasserverbrauch.</strong>
       </p>
 
       <div class="hero-actions" data-reveal data-delay="220">
@@ -122,33 +104,30 @@
           </svg>
           <div class="btn-neon-glow"></div>
         </a>
-        <a href="#nano" class="btn-ghost">
-          <span>Technologie entdecken →</span>
+        <a href="#innen" class="btn-ghost">
+          <span>Pakete entdecken →</span>
         </a>
       </div>
 
       <div class="hero-chips" data-reveal data-delay="300">
+        <span class="chip chip-green">🚗 Mobiler Service</span>
         <span class="chip chip-green">💧 −90% Wasser</span>
-        <span class="chip chip-green">🔬 Nano SiO₂</span>
+        <span class="chip chip-green">🔬 Nanotechnologie</span>
         <span class="chip chip-blue">🛡️ 5 Jahre Schutz</span>
-        <span class="chip chip-green">♻️ Zero-Waste</span>
-        <span class="chip chip-blue">⚡ Express 24h</span>
+        <span class="chip chip-green">♻️ CO₂-neutral</span>
       </div>
     </div>
 
     <div class="hero-right" data-reveal data-delay="80">
-      <!-- Animated water morphing scene -->
       <div class="hero-scene">
-        <!-- Rotating neon rings -->
         <div class="hs-ring r1"></div>
         <div class="hs-ring r2"></div>
         <div class="hs-ring r3"></div>
 
-        <!-- Center card -->
         <div class="hs-card">
           <div class="hs-card-header">
             <div class="hsc-live">
-              <span class="live-dot"></span>Live-Aufbereitung
+              <span class="live-dot"></span>Mobile Aufbereitung aktiv
             </div>
             <span class="hsc-badge">Premium</span>
           </div>
@@ -161,9 +140,9 @@
 
           <div class="hs-steps">
             <div class="hss done"><span class="hss-icon">✓</span><span>Vorreinigung</span></div>
-            <div class="hss done"><span class="hss-icon">✓</span><span>Nano-Versiegelung</span></div>
-            <div class="hss active"><span class="hss-dot"></span><span>Lackpolitur</span></div>
-            <div class="hss"><span class="hss-o">○</span><span>Innenreinigung</span></div>
+            <div class="hss done"><span class="hss-icon">✓</span><span>Innenreinigung</span></div>
+            <div class="hss active"><span class="hss-dot"></span><span>Nano-Versiegelung</span></div>
+            <div class="hss"><span class="hss-o">○</span><span>Außenpolitur</span></div>
             <div class="hss"><span class="hss-o">○</span><span>Qualitätskontrolle</span></div>
           </div>
 
@@ -178,14 +157,13 @@
           </div>
         </div>
 
-        <!-- Float cards — corner-positioned, no overlap -->
         <div class="hs-float sf-tl" data-float="1">
           <span>🔬</span>
           <div><b>Nano SiO₂</b><p>Molekularschutz</p></div>
         </div>
         <div class="hs-float sf-br" data-float="2">
           <span>🌿</span>
-          <div><b>CO₂-neutral</b><p>Zertifiziert 2021</p></div>
+          <div><b>CO₂-neutral</b><p>Zertifiziert</p></div>
         </div>
         <div class="hs-float sf-bl" data-float="3">
           <span>⭐</span>
@@ -218,6 +196,182 @@
     </div>
   </div>
 
+  <!-- ═══ INNENREINIGUNG ══════════════════════════ -->
+  <section class="section s-pakete" id="innen">
+    <div class="container">
+      <div class="s-head" data-reveal>
+        <span class="s-tag">Innenreinigung</span>
+        <h2>Sauber von <em>innen heraus</em></h2>
+        <p>Drei Pakete für jeden Bedarf — direkt bei Ihnen vor Ort.</p>
+      </div>
+
+      <!-- Leistungsübersicht Innen -->
+      <div class="leistungen-uebersicht" data-reveal>
+        <h3 class="lu-title">Alle verfügbaren Leistungen</h3>
+        <div class="lu-grid">
+          <span class="lu-item">🧹 Feucht abwischen & Saugen</span>
+          <span class="lu-item">🪣 Tiefenpflege Fußmatten</span>
+          <span class="lu-item">🪟 Scheiben reinigen</span>
+          <span class="lu-item">🧴 Fleckenentfernung</span>
+          <span class="lu-item">💦 Nass-Trocken-Reinigung</span>
+          <span class="lu-item">🌸 Geruchsneutralisierung</span>
+          <span class="lu-item">🛋️ Kunststoff- & Lederpflege</span>
+          <span class="lu-item">🐾 Tierhaarentfernung</span>
+        </div>
+      </div>
+
+      <!-- 3 Pakete Innen -->
+      <div class="pakete-grid">
+
+        <!-- STANDARD -->
+        <div class="paket-card" data-reveal data-delay="0">
+          <div class="pc-tier">Standard</div>
+          <div class="pc-icon">🚗</div>
+          <h3>Standard Innen</h3>
+          <p class="pc-desc">Die essentielle Innenpflege für regelmäßige Auffrischung.</p>
+          <ul class="pc-list">
+            <li>Feucht abwischen</li>
+            <li>Saugen</li>
+            <li>Scheiben reinigen</li>
+          </ul>
+          <div class="preistabelle">
+            <div class="pt-mini-row"><span>PKW S</span><strong>49,99 €</strong></div>
+            <div class="pt-mini-row"><span>PKW M</span><strong>59,99 €</strong></div>
+            <div class="pt-mini-row"><span>PKW L</span><strong>69,99 €</strong></div>
+            <div class="pt-mini-row"><span>Transporter</span><strong>59,99 €</strong></div>
+            <div class="pt-mini-row"><span>LKW</span><strong>79,99 €</strong></div>
+          </div>
+          <a href="#kontakt" class="pc-btn">Buchen →</a>
+        </div>
+
+        <!-- GOLD -->
+        <div class="paket-card paket-gold" data-reveal data-delay="100">
+          <div class="pc-tier-gold">⭐ Gold</div>
+          <div class="pc-icon">✨</div>
+          <h3>Gold Innen</h3>
+          <p class="pc-desc">Umfassende Pflege mit Tiefenreinigung und Kunststoffpflege.</p>
+          <ul class="pc-list">
+            <li>Feucht abwischen & Saugen</li>
+            <li>Scheiben reinigen</li>
+            <li>Tiefenpflege Fußmatten</li>
+            <li>Tiefenpflege Kofferraum</li>
+            <li>Kunststoff- & Lederpflege</li>
+          </ul>
+          <div class="preistabelle">
+            <div class="pt-mini-row"><span>PKW S</span><strong>69,99 €</strong></div>
+            <div class="pt-mini-row"><span>PKW M</span><strong>79,99 €</strong></div>
+            <div class="pt-mini-row"><span>PKW L</span><strong>89,99 €</strong></div>
+            <div class="pt-mini-row"><span>Transporter</span><strong>79,99 €</strong></div>
+            <div class="pt-mini-row"><span>LKW</span><strong>99,99 €</strong></div>
+          </div>
+          <a href="#kontakt" class="pc-btn-gold">Buchen →</a>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="paket-card paket-featured" data-reveal data-delay="200">
+          <div class="pc-tier-featured">★ Premium</div>
+          <div class="pc-icon">💎</div>
+          <h3>Premium Innen</h3>
+          <p class="pc-desc">Das Rundum-Sorglos-Paket — jeder Winkel perfekt gereinigt.</p>
+          <ul class="pc-list">
+            <li>Feucht abwischen & Saugen</li>
+            <li>Scheiben reinigen</li>
+            <li>Tiefenpflege Fußmatten & Kofferraum</li>
+            <li>Kunststoff- & Lederpflege</li>
+            <li>Nass-Trocken-Reinigung</li>
+            <li>Fleckenentfernung</li>
+            <li>Tierhaarentfernung</li>
+            <li>Geruchsneutralisierung</li>
+          </ul>
+          <div class="preistabelle">
+            <div class="pt-mini-row"><span>PKW S</span><strong>149,00 €</strong></div>
+            <div class="pt-mini-row"><span>PKW M</span><strong>159,00 €</strong></div>
+            <div class="pt-mini-row"><span>PKW L</span><strong>169,00 €</strong></div>
+            <div class="pt-mini-row"><span>Transporter</span><strong>159,00 €</strong></div>
+            <div class="pt-mini-row"><span>LKW</span><strong>169,00 €</strong></div>
+          </div>
+          <a href="#kontakt" class="pc-btn-neon">Buchen →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AUSSENREINIGUNG ═════════════════════════ -->
+  <section class="section s-aussen" id="aussen">
+    <div class="aussen-bg"></div>
+    <div class="container">
+      <div class="s-head" data-reveal>
+        <span class="s-tag s-tag-light">Außenreinigung</span>
+        <h2>Strahlend <em>von außen</em></h2>
+        <p>Von der Basis-Wäsche bis zur professionellen Versiegelung.</p>
+      </div>
+
+      <!-- Leistungsübersicht Außen -->
+      <div class="leistungen-uebersicht leistungen-uebersicht-dark" data-reveal>
+        <h3 class="lu-title lu-title-light">Alle verfügbaren Leistungen</h3>
+        <div class="lu-grid">
+          <span class="lu-item lu-item-light">🚗 Karosserie reinigen</span>
+          <span class="lu-item lu-item-light">⚙️ Felgen reinigen</span>
+          <span class="lu-item lu-item-light">🪟 Scheiben reinigen</span>
+          <span class="lu-item lu-item-light">🛡️ Versiegelung</span>
+          <span class="lu-item lu-item-light">🦟 Insekten entfernen</span>
+          <span class="lu-item lu-item-light">✋ Handpolitur</span>
+        </div>
+      </div>
+
+      <!-- 2 Pakete Außen -->
+      <div class="pakete-grid pakete-grid-2">
+
+        <!-- STANDARD AUSSEN -->
+        <div class="paket-card paket-card-dark" data-reveal data-delay="0">
+          <div class="pc-tier pc-tier-dark">Standard Außen</div>
+          <div class="pc-icon">🚿</div>
+          <h3 style="color:white">Standard Außen</h3>
+          <p class="pc-desc" style="color:rgba(255,255,255,0.6)">Professionelle Außenreinigung für den täglichen Glanz.</p>
+          <ul class="pc-list pc-list-dark">
+            <li>Karosserie reinigen</li>
+            <li>Felgen reinigen</li>
+            <li>Scheiben reinigen</li>
+            <li>Insekten entfernen</li>
+            <li>Handpolitur</li>
+          </ul>
+          <div class="preistabelle preistabelle-dark">
+            <div class="pt-mini-row pt-mini-dark"><span>PKW S</span><strong>59,99 €</strong></div>
+            <div class="pt-mini-row pt-mini-dark"><span>PKW M</span><strong>69,99 €</strong></div>
+            <div class="pt-mini-row pt-mini-dark"><span>PKW L</span><strong>79,99 €</strong></div>
+            <div class="pt-mini-row pt-mini-dark"><span>Transporter</span><strong>89,99 €</strong></div>
+          </div>
+          <a href="#kontakt" class="pc-btn-outline-light">Buchen →</a>
+        </div>
+
+        <!-- PREMIUM AUSSEN -->
+        <div class="paket-card paket-card-dark paket-aussen-premium" data-reveal data-delay="150">
+          <div class="pc-tier-featured">★ Premium Außen</div>
+          <div class="pc-icon">💎</div>
+          <h3 style="color:white">Premium Außen</h3>
+          <p class="pc-desc" style="color:rgba(255,255,255,0.6)">Komplettschutz mit Versiegelung für maximalen Glanz.</p>
+          <ul class="pc-list pc-list-dark">
+            <li>Karosserie reinigen</li>
+            <li>Felgen reinigen</li>
+            <li>Scheiben reinigen</li>
+            <li>Versiegelung</li>
+            <li>Insekten entfernen</li>
+            <li>Handpolitur</li>
+          </ul>
+          <div class="preistabelle preistabelle-dark">
+            <div class="pt-mini-row pt-mini-dark"><span>PKW S</span><strong>69,99 €</strong></div>
+            <div class="pt-mini-row pt-mini-dark"><span>PKW M</span><strong>79,99 €</strong></div>
+            <div class="pt-mini-row pt-mini-dark"><span>PKW L</span><strong>89,99 €</strong></div>
+            <div class="pt-mini-row pt-mini-dark"><span>Transporter</span><strong>99,99 €</strong></div>
+          </div>
+          <a href="#kontakt" class="pc-btn-neon">Buchen →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ NANO SECTION ═══════════════════════════ -->
   <section class="section s-nano" id="nano">
     <div class="container">
@@ -230,7 +384,6 @@
       <div class="nano-layout">
         <div class="nano-viz" data-reveal>
           <div class="nano-atom">
-            <!-- Atom core -->
             <div class="na-core">
               <div class="na-core-inner">
                 <span class="na-symbol">Si</span>
@@ -238,11 +391,9 @@
               </div>
               <div class="na-core-glow"></div>
             </div>
-            <!-- Orbits -->
             <div class="na-orbit o1"><div class="na-electron"><span>O</span></div></div>
             <div class="na-orbit o2"><div class="na-electron"><span>O</span></div></div>
             <div class="na-orbit o3"><div class="na-electron"><span>Si</span></div></div>
-            <!-- Size label -->
             <div class="na-size">1 – 100 nm</div>
           </div>
         </div>
@@ -252,34 +403,33 @@
             <div class="nfi-icon nfi-green">💧</div>
             <div>
               <h4>90% weniger Wasserverbrauch</h4>
-              <p>Nano-Reinigung kommt mit einem Bruchteil des Wassers herkömmlicher Wäschen aus — messbar, nachweisbar, zertifiziert.</p>
+              <p>Nano-Reinigung kommt mit einem Bruchteil des Wassers herkömmlicher Wäschen aus.</p>
             </div>
           </div>
           <div class="nf-item" data-reveal data-delay="80">
             <div class="nfi-icon nfi-blue">🛡️</div>
             <div>
               <h4>Bis zu 5 Jahre Schutzwirkung</h4>
-              <p>Die hydrophobe Nano-Schicht versiegelt und schützt — deutlich länger als herkömmliche Wachs- oder Polymer-Behandlungen.</p>
+              <p>Die hydrophobe Nano-Schicht versiegelt und schützt deutlich länger als Wachs.</p>
             </div>
           </div>
           <div class="nf-item" data-reveal data-delay="160">
             <div class="nfi-icon nfi-green">🌿</div>
             <div>
               <h4>100% biologisch abbaubar</h4>
-              <p>Alle eingesetzten Nano-Produkte sind vollständig biologisch abbaubar und schonen Grundwasser und Umwelt.</p>
+              <p>Alle Nano-Produkte sind vollständig biologisch abbaubar und schonen das Grundwasser.</p>
             </div>
           </div>
           <div class="nf-item" data-reveal data-delay="240">
             <div class="nfi-icon nfi-blue">⚡</div>
             <div>
               <h4>Selbstreinigender Lotus-Effekt</h4>
-              <p>Wasser perlt ab, Schmutz haftet nicht — Ihr Fahrzeug bleibt länger sauber und benötigt deutlich weniger Pflege.</p>
+              <p>Wasser perlt ab, Schmutz haftet nicht — Ihr Fahrzeug bleibt länger sauber.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Nano stats row -->
       <div class="nano-stats" data-reveal>
         <div class="nstat">
           <div class="nstat-num neon-counter" data-target="90">0</div>
@@ -308,79 +458,15 @@
     </div>
   </section>
 
-  <!-- ═══ PAKETE ══════════════════════════════════ -->
-  <section class="section s-pakete" id="pakete">
-    <div class="container">
-      <div class="s-head" data-reveal>
-        <span class="s-tag">Unsere Pakete</span>
-        <h2>Aufbereitung <em>nach Maß</em></h2>
-        <p>Von der Basis-Nano-Wäsche bis zur Profi-Keramikversiegelung.</p>
-      </div>
-
-      <div class="pakete-grid">
-        <div class="paket-card" data-reveal data-delay="0">
-          <div class="pc-tier">Basic</div>
-          <div class="pc-icon">🚗</div>
-          <h3>Nano-Basic</h3>
-          <p class="pc-desc">Kontaktlose Außenwäsche mit Nano-Technologie.</p>
-          <ul class="pc-list">
-            <li>Nano-Außenwäsche kontaktlos</li>
-            <li>Felgen- & Reifenpflege</li>
-            <li>Scheibenpflege</li>
-            <li>Cockpit-Reinigung</li>
-            <li>Außenspiegel & Dichtungen</li>
-          </ul>
-          <div class="pc-price">ab <strong>79 €</strong></div>
-          <a href="#kontakt" class="pc-btn">Buchen →</a>
-        </div>
-
-        <div class="paket-card paket-featured" data-reveal data-delay="100">
-          <div class="pc-tier-featured">★ Bestseller</div>
-          <div class="pc-icon">✨</div>
-          <h3>Nano-Premium</h3>
-          <p class="pc-desc">Komplettaufbereitung innen & außen mit SiO₂-Versiegelung.</p>
-          <ul class="pc-list">
-            <li>Alles aus Nano-Basic</li>
-            <li>SiO₂ Versiegelung (2 Jahre)</li>
-            <li>Innenraumtiefenreinigung</li>
-            <li>Leder- & Kunststoffpflege</li>
-            <li>Geruchsneutralisierung</li>
-            <li>Politur 1-stufig</li>
-          </ul>
-          <div class="pc-price-featured">ab <strong>249 €</strong></div>
-          <a href="#kontakt" class="pc-btn-neon">Buchen →</a>
-        </div>
-
-        <div class="paket-card" data-reveal data-delay="200">
-          <div class="pc-tier pc-tier-blue">Keramik</div>
-          <div class="pc-icon">🔬</div>
-          <h3>Keramik-Elite</h3>
-          <p class="pc-desc">9H-Keramikversiegelung — maximaler Schutz für 5 Jahre.</p>
-          <ul class="pc-list">
-            <li>Alles aus Nano-Premium</li>
-            <li>9H Keramik-Versiegelung (5 J.)</li>
-            <li>Lackkorrektur 2-stufig</li>
-            <li>Glasversiegelung</li>
-            <li>Felgenversiegelung Keramik</li>
-            <li>Zertifikat & Qualitätsbericht</li>
-          </ul>
-          <div class="pc-price">ab <strong>589 €</strong></div>
-          <a href="#kontakt" class="pc-btn pc-btn-blue">Buchen →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ UMWELT / VERGLEICH ══════════════════════ -->
+  <!-- ═══ UMWELT ══════════════════════════════════ -->
   <section class="section s-eco" id="eco">
     <div class="eco-bg-wave"></div>
     <div class="container">
       <div class="eco-layout">
         <div class="eco-left" data-reveal>
           <span class="s-tag s-tag-light">Umweltschutz</span>
-          <h2>Fahrzeugpflege<br /><em>ohne schlechtes</em><br />Gewissen</h2>
-          <p>Herkömmliche Autowäschen verbrauchen bis zu 150 Liter Wasser pro Fahrzeug. Unsere Nanotechnologie benötigt weniger als 15 Liter — ohne Qualitätseinbußen.</p>
-
+          <h2>Mobil sauber<br /><em>ohne schlechtes</em><br />Gewissen</h2>
+          <p>Herkömmliche Autowäschen verbrauchen bis zu 150 Liter Wasser pro Fahrzeug. Greenglanz Mobility benötigt weniger als 15 Liter.</p>
           <div class="eco-compare" id="ecoCompare">
             <div class="ec-row">
               <span class="ec-label">Herkömmlich</span>
@@ -395,7 +481,6 @@
               </div>
             </div>
           </div>
-
           <div class="eco-certs" data-reveal>
             <span>💧 90% Wasserersparnis</span>
             <span>🌿 Biologisch abbaubar</span>
@@ -403,32 +488,17 @@
             <span>♻️ Zero-Waste-Betrieb</span>
           </div>
         </div>
-
         <div class="eco-right" data-reveal data-delay="150">
           <div class="eco-orb-wrap">
-            <!-- Main stat card -->
             <div class="eco-main-card">
               <span class="emc-drop">💧</span>
               <div class="emc-num neon-counter" data-target="90">0</div>
               <span class="emc-pct">%</span>
               <p>weniger Wasserverbrauch gegenüber herkömmlicher Autowäsche</p>
             </div>
-            <!-- Satellites -->
-            <div class="eco-sat s1" data-float="1">
-              <span>🌍</span>
-              <strong>CO₂-neutral</strong>
-              <p>seit 2021</p>
-            </div>
-            <div class="eco-sat s2" data-float="2">
-              <span>♻️</span>
-              <strong>Kreislauf</strong>
-              <p>Wasser aufbereitet</p>
-            </div>
-            <div class="eco-sat s3" data-float="3">
-              <span>⚡</span>
-              <strong>Ökostrom</strong>
-              <p>100% erneuerbar</p>
-            </div>
+            <div class="eco-sat s1" data-float="1"><span>🌍</span><strong>CO₂-neutral</strong><p>seit 2021</p></div>
+            <div class="eco-sat s2" data-float="2"><span>♻️</span><strong>Kreislauf</strong><p>Wasser aufbereitet</p></div>
+            <div class="eco-sat s3" data-float="3"><span>⚡</span><strong>Ökostrom</strong><p>100% erneuerbar</p></div>
           </div>
         </div>
       </div>
@@ -440,44 +510,39 @@
     <div class="container">
       <div class="s-head" data-reveal>
         <span class="s-tag">Unser Ablauf</span>
-        <h2>In <em>4 Schritten</em> zum<br />perfekten Ergebnis</h2>
+        <h2>In <em>4 Schritten</em> zu<br />perfektem Ergebnis</h2>
       </div>
-
       <div class="prozess-timeline">
         <div class="ptl-line"><div class="ptl-progress" id="ptlProg"></div></div>
-
         <div class="ptl-step" data-reveal data-delay="0">
           <div class="ptl-node"><span>01</span><div class="ptl-ring"></div></div>
           <div class="ptl-content">
-            <h3>Begutachtung & Angebot</h3>
-            <p>Kostenlose Fahrzeugbegutachtung — persönlich oder per Foto. Festpreisangebot am selben Tag, kein Callcenter.</p>
+            <h3>Termin & Angebot</h3>
+            <p>Kontaktaufnahme, kostenlose Beratung, Festpreisangebot — am selben Tag, kein Callcenter.</p>
             <span class="ptl-time">⏱ 30 Minuten</span>
           </div>
         </div>
-
         <div class="ptl-step" data-reveal data-delay="100">
           <div class="ptl-node"><span>02</span><div class="ptl-ring"></div></div>
           <div class="ptl-content">
-            <h3>Vorreinigung & Dekon</h3>
-            <p>Kontaktlose Vorreinigung, pH-neutrale Dekontamination. Alle Verunreinigungen werden entfernt bevor die Nano-Versiegelung aufgetragen wird.</p>
-            <span class="ptl-time">⏱ 45–90 Minuten</span>
+            <h3>Wir kommen zu Ihnen</h3>
+            <p>Unser mobiles Team erscheint pünktlich an Ihrem Standort — mit allem Equipment an Bord.</p>
+            <span class="ptl-time">⏱ Wunschtermin</span>
           </div>
         </div>
-
         <div class="ptl-step" data-reveal data-delay="200">
           <div class="ptl-node"><span>03</span><div class="ptl-ring"></div></div>
           <div class="ptl-content">
-            <h3>Nano-Versiegelung</h3>
-            <p>SiO₂-Nanopartikel werden schichtweise aufgetragen und unter kontrollierten Bedingungen ausgehärtet. Maximale Schutzwirkung.</p>
-            <span class="ptl-time">⏱ 1–3 Stunden</span>
+            <h3>Professionelle Aufbereitung</h3>
+            <p>Innen- und/oder Außenreinigung nach gewähltem Paket — mit Nano-Technologie und Öko-Produkten.</p>
+            <span class="ptl-time">⏱ 1–3 Stunden je Paket</span>
           </div>
         </div>
-
         <div class="ptl-step" data-reveal data-delay="300">
           <div class="ptl-node"><span>04</span><div class="ptl-ring"></div></div>
           <div class="ptl-content">
-            <h3>Qualitätskontrolle & Übergabe</h3>
-            <p>Lichttest, Fotodokumentation, Nano-Zertifikat. Ihr Fahrzeug wird makellos und versiegelt übergeben.</p>
+            <h3>Übergabe & Kontrolle</h3>
+            <p>Fotodokumentation, Qualitätskontrolle, Übergabe. Ihre Zufriedenheit ist unsere Garantie.</p>
             <span class="ptl-time">⏱ 100% Garantie</span>
           </div>
         </div>
@@ -485,27 +550,49 @@
     </div>
   </section>
 
-  <!-- ═══ PREISE ══════════════════════════════════ -->
+  <!-- ═══ PREISÜBERSICHT ══════════════════════════ -->
   <section class="section s-preise" id="preise">
     <div class="container">
       <div class="s-head" data-reveal>
         <span class="s-tag">Preisübersicht</span>
-        <h2>Transparente <em>Festpreise</em></h2>
-        <p>Keine versteckten Kosten. Alle Preise inklusive zertifizierter Nano-Produkte.</p>
+        <h2>Alle Preise auf<br /><em>einen Blick</em></h2>
+        <p>Transparente Festpreise — keine versteckten Kosten.</p>
       </div>
 
-      <div class="preise-table" data-reveal>
-        <div class="pt-header">
-          <span>Leistung</span><span>PKW / SUV</span><span>Van / Transporter</span><span>Wohnmobil</span>
+      <!-- Innen Preise -->
+      <div class="preise-block" data-reveal>
+        <div class="pb-header">
+          <span class="pb-title">🚗 Innenreinigung</span>
         </div>
-        <div class="pt-row"><span>Nano-Außenwäsche</span><span>ab 49 €</span><span>ab 69 €</span><span>ab 89 €</span></div>
-        <div class="pt-row"><span>Innenreinigung</span><span>ab 39 €</span><span>ab 59 €</span><span>ab 79 €</span></div>
-        <div class="pt-row"><span>Nano-Basic</span><span>ab 79 €</span><span>ab 109 €</span><span>ab 139 €</span></div>
-        <div class="pt-row pt-highlight"><span>Nano-Premium ⭐</span><span>ab 249 €</span><span>ab 319 €</span><span>ab 399 €</span></div>
-        <div class="pt-row"><span>Keramik-Elite</span><span>ab 589 €</span><span>ab 749 €</span><span>auf Anfrage</span></div>
-        <div class="pt-row"><span>Lackkorrektur</span><span>ab 199 €</span><span>ab 279 €</span><span>auf Anfrage</span></div>
+        <div class="preise-table">
+          <div class="pt-header">
+            <span>Fahrzeug</span><span>Standard</span><span>Gold ⭐</span><span>Premium 💎</span>
+          </div>
+          <div class="pt-row"><span>PKW S</span><span>49,99 €</span><span>69,99 €</span><span>149,00 €</span></div>
+          <div class="pt-row"><span>PKW M</span><span>59,99 €</span><span>79,99 €</span><span>159,00 €</span></div>
+          <div class="pt-row pt-highlight"><span>PKW L</span><span>69,99 €</span><span>89,99 €</span><span>169,00 €</span></div>
+          <div class="pt-row"><span>Transporter</span><span>59,99 €</span><span>79,99 €</span><span>159,00 €</span></div>
+          <div class="pt-row"><span>LKW</span><span>79,99 €</span><span>99,99 €</span><span>169,00 €</span></div>
+        </div>
       </div>
-      <p class="preise-note" data-reveal>* Alle Preise zzgl. MwSt. Endpreise nach kostenloser Begutachtung. Fahrzeugzustand kann abweichen.</p>
+
+      <!-- Außen Preise -->
+      <div class="preise-block" data-reveal>
+        <div class="pb-header">
+          <span class="pb-title">✨ Außenreinigung</span>
+        </div>
+        <div class="preise-table">
+          <div class="pt-header">
+            <span>Fahrzeug</span><span>Standard</span><span>Premium 💎</span><span></span>
+          </div>
+          <div class="pt-row"><span>PKW S</span><span>59,99 €</span><span>69,99 €</span><span></span></div>
+          <div class="pt-row"><span>PKW M</span><span>69,99 €</span><span>79,99 €</span><span></span></div>
+          <div class="pt-row pt-highlight"><span>PKW L</span><span>79,99 €</span><span>89,99 €</span><span></span></div>
+          <div class="pt-row"><span>Transporter</span><span>89,99 €</span><span>99,99 €</span><span></span></div>
+        </div>
+      </div>
+
+      <p class="preise-note" data-reveal>* Alle Preise inkl. MwSt. Preise gelten für Standardverschmutzung. Bei starker Verschmutzung oder Sonderfahrzeugen auf Anfrage.</p>
     </div>
   </section>
 
@@ -516,26 +603,24 @@
       <div class="kontakt-layout">
         <div class="kl" data-reveal>
           <span class="s-tag">Termin anfragen</span>
-          <h2>Ihr Fahrzeug<br /><em>verdient das Beste.</em></h2>
-          <p>Kostenlose Begutachtung, transparenter Festpreis — wir melden uns innerhalb von 2 Stunden.</p>
-
+          <h2>Wir kommen<br /><em>zu Ihnen.</em></h2>
+          <p>Mobile Aufbereitung direkt bei Ihnen. Kostenlose Beratung, transparenter Festpreis — wir melden uns innerhalb von 2 Stunden.</p>
           <div class="kl-infos">
             <div class="kli"><span>📞</span><div><b>Telefon</b><p>+49 30 123456</p></div></div>
-            <div class="kli"><span>✉️</span><div><b>E-Mail</b><p>fahrzeug@greenglanz.de</p></div></div>
-            <div class="kli"><span>📍</span><div><b>Werkstatt</b><p>Industriestr. 88, 10557 Berlin</p></div></div>
-            <div class="kli"><span>⏰</span><div><b>Öffnungszeiten</b><p>Mo – Sa · 07:00 – 19:00</p></div></div>
+            <div class="kli"><span>✉️</span><div><b>E-Mail</b><p>info@greenglanz-mobility.de</p></div></div>
+            <div class="kli"><span>📍</span><div><b>Einsatzgebiet</b><p>Berlin & Umgebung</p></div></div>
+            <div class="kli"><span>⏰</span><div><b>Termine</b><p>Mo – Sa · 07:00 – 19:00</p></div></div>
           </div>
-
           <div class="kl-promise">
             <span class="klp-dot">✦</span>
             <div>
-              <b>Nano-Versprechen</b>
+              <b>Greenglanz-Versprechen</b>
               <ul>
-                <li>✓ Kostenlose Begutachtung</li>
+                <li>✓ Mobiler Service direkt zu Ihnen</li>
+                <li>✓ Kostenlose Beratung & Angebot</li>
                 <li>✓ Festpreis vor Beginn</li>
                 <li>✓ 90% weniger Wasserverbrauch</li>
-                <li>✓ Hol- & Bringservice Berlin</li>
-                <li>✓ Keramikzertifikat inklusive</li>
+                <li>✓ 100% Zufriedenheitsgarantie</li>
               </ul>
             </div>
           </div>
@@ -547,65 +632,62 @@
               <h3>Termin kostenfrei anfragen</h3>
               <p>Antwort garantiert innerhalb 2 Stunden.</p>
             </div>
-
             <div class="kf-row">
               <div class="kfg"><label>Vorname *</label><input type="text" id="fn" placeholder="Max" required /></div>
               <div class="kfg"><label>Nachname *</label><input type="text" id="ln" placeholder="Mustermann" required /></div>
             </div>
             <div class="kf-row">
               <div class="kfg"><label>E-Mail *</label><input type="email" id="em" placeholder="max@email.de" required /></div>
-              <div class="kfg"><label>Telefon *</label><input type="tel" id="tel" placeholder="+49 30 …" required /></div>
+              <div class="kfg"><label>Telefon *</label><input type="tel" id="tel" placeholder="+49 …" required /></div>
             </div>
             <div class="kf-row">
               <div class="kfg">
                 <label>Fahrzeugtyp *</label>
                 <select id="fvType" required>
                   <option value="">Bitte wählen …</option>
-                  <option>PKW (Limousine / Kombi)</option>
-                  <option>SUV / Geländewagen</option>
-                  <option>Cabrio / Sportwagen</option>
-                  <option>Van / Transporter</option>
-                  <option>Wohnmobil / Camper</option>
-                  <option>Motorrad / Roller</option>
+                  <option>PKW S (Kleinwagen)</option>
+                  <option>PKW M (Mittelklasse)</option>
+                  <option>PKW L (Oberklasse / SUV)</option>
+                  <option>Transporter</option>
+                  <option>LKW</option>
                 </select>
               </div>
               <div class="kfg">
-                <label>Paket</label>
+                <label>Gewünschtes Paket</label>
                 <select id="paket">
                   <option value="">Bitte wählen …</option>
-                  <option>Nano-Basic (ab 79 €)</option>
-                  <option>Nano-Premium (ab 249 €)</option>
-                  <option>Keramik-Elite (ab 589 €)</option>
+                  <optgroup label="Innenreinigung">
+                    <option>Innen Standard</option>
+                    <option>Innen Gold ⭐</option>
+                    <option>Innen Premium 💎</option>
+                  </optgroup>
+                  <optgroup label="Außenreinigung">
+                    <option>Außen Standard</option>
+                    <option>Außen Premium 💎</option>
+                  </optgroup>
+                  <option>Kombi: Innen + Außen</option>
                   <option>Beratung gewünscht</option>
                 </select>
               </div>
             </div>
             <div class="kf-row">
               <div class="kfg"><label>Wunschtermin</label><input type="date" id="datum" /></div>
-              <div class="kfg">
-                <label>Hol- & Bringservice?</label>
-                <select id="pickup">
-                  <option>Nein, ich bringe das Fahrzeug</option>
-                  <option>Ja, bitte abholen (Berlin)</option>
-                </select>
-              </div>
+              <div class="kfg"><label>Standort / Adresse</label><input type="text" id="adresse" placeholder="Musterstr. 1, Berlin" /></div>
             </div>
             <div class="kfg">
-              <label>Zustand & Besonderheiten</label>
-              <textarea id="msg" rows="3" placeholder="z.B. Kratzer, Leder, Nichtraucherfahrzeug …"></textarea>
+              <label>Weitere Informationen</label>
+              <textarea id="msg" rows="3" placeholder="z.B. starke Verschmutzung, Haustiere, besondere Wünsche …"></textarea>
             </div>
             <div class="kf-check">
               <input type="checkbox" id="dsgvo" required />
               <label for="dsgvo">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme zu. *</label>
             </div>
-
             <button type="submit" class="btn-submit-neon" id="submitBtn">
               <span class="bsn-text">Termin kostenfrei anfragen</span>
               <span class="bsn-arrow">→</span>
               <div class="bsn-loader"></div>
               <div class="bsn-glow"></div>
             </button>
-
             <div class="kf-success" id="kSuccess">
               <div class="kfs-icon">✓</div>
               <strong>Anfrage erhalten!</strong>
@@ -621,28 +703,43 @@
   <footer class="footer">
     <div class="ft-inner">
       <div class="ft-brand">
-        <div class="nav-logo" style="margin-bottom:1rem">
-          <div class="nl-icon">
-            <svg viewBox="0 0 32 42" fill="none"><path d="M16 3 C16 3 30 16 30 26 C30 34.8 23.7 39 16 39 C8.3 39 2 34.8 2 26 C2 16 16 3 16 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-          </div>
-          <div class="nl-text">
-            <div class="nl-name" style="color:rgba(255,255,255,0.9)">
-              <span style="color:#00e676">Green</span><span>glanz</span>
-            </div>
-          </div>
-        </div>
-        <p>Premium Fahrzeugaufbereitung mit Nanotechnologie. Klimafreundlich. Zertifiziert. Neon-sauber.</p>
+        <!-- Logo im Footer -->
+        <img src="logo.jpeg" alt="Greenglanz Mobility" class="ft-logo-img" />
+        <p>Mobile Fahrzeugaufbereitung mit Nanotechnologie.<br />Mobil sauber, nachhaltig unterwegs.</p>
       </div>
       <div class="ft-cols">
-        <div class="ftc"><b>Pakete</b><a href="#pakete">Nano-Basic</a><a href="#pakete">Nano-Premium</a><a href="#pakete">Keramik-Elite</a></div>
-        <div class="ftc"><b>Info</b><a href="#nano">Nanotechnologie</a><a href="#prozess">Ablauf</a><a href="#preise">Preise</a></div>
-        <div class="ftc"><b>Rechtliches</b><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
-        <div class="ftc"><b>Kontakt</b><a href="tel:+4930123456">+49 30 123456</a><a href="mailto:fahrzeug@greenglanz.de">fahrzeug@greenglanz.de</a><span>Mo–Sa · 07–19 Uhr</span></div>
+        <div class="ftc">
+          <b>Innenreinigung</b>
+          <a href="#innen">Standard</a>
+          <a href="#innen">Gold ⭐</a>
+          <a href="#innen">Premium 💎</a>
+        </div>
+        <div class="ftc">
+          <b>Außenreinigung</b>
+          <a href="#aussen">Standard</a>
+          <a href="#aussen">Premium 💎</a>
+          <a href="#nano">Nanotechnologie</a>
+        </div>
+        <div class="ftc">
+          <b>Rechtliches</b>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+        <div class="ftc">
+          <b>Kontakt</b>
+          <a href="tel:+4930123456">+49 30 123456</a>
+          <a href="mailto:info@greenglanz-mobility.de">info@greenglanz-mobility.de</a>
+          <span>Mo–Sa · 07–19 Uhr</span>
+        </div>
       </div>
     </div>
     <div class="ft-bottom">
-      <span>© 2025 Greenglanz Reinigungsservice GmbH.</span>
+      <span>© 2025 Greenglanz Mobility. Alle Rechte vorbehalten.</span>
       <span class="ft-badge">🔬 Nanotechnologie · 💧 90% weniger Wasser · 🌿 CO₂-neutral</span>
+    </div>
+    <!-- CoresetupStudio Credit -->
+    <div class="ft-credit">
+      Made with ❤️ by <a href="https://coresetup.studio" target="_blank" rel="noopener noreferrer">CoresetupStudio</a>
     </div>
   </footer>
 
