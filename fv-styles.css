@@ -1196,3 +1196,193 @@ body.cur-lg .cur-ring { width: 52px; height: 52px; border-color: var(--ng); }
   .legal-header h1 { font-size: 2.2rem; }
 }
 
+/* ══════════════════════════════════════════════════
+   LOGO IMAGE & NEW SECTIONS
+══════════════════════════════════════════════════ */
+
+/* Nav Logo Image */
+.nav-logo-img-wrap {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  /* Weißer Hintergrund des JPEG ausblenden */
+  mix-blend-mode: multiply;
+  transition: opacity 0.25s var(--ease);
+}
+.nav-logo-img:hover { opacity: 0.85; }
+
+/* Loader Logo Image */
+.loader-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  animation: rise 0.6s var(--ease) 1s forwards;
+}
+
+/* Footer Logo Image */
+.ft-logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: brightness(0) invert(1) opacity(0.85);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* ── Leistungsübersicht Box ─────────────────────── */
+.leistungen-uebersicht {
+  background: var(--off);
+  border: 1px solid rgba(0,230,118,0.15);
+  border-radius: var(--r-lg);
+  padding: 1.8rem 2rem;
+  margin-bottom: 2.5rem;
+}
+.leistungen-uebersicht-dark {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(0,230,118,0.2);
+}
+.lu-title {
+  font-family: var(--fd); font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ng-dim); margin-bottom: 1rem;
+}
+.lu-title-light { color: rgba(255,255,255,0.6) !important; }
+.lu-grid {
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+}
+.lu-item {
+  font-size: 0.82rem; font-weight: 500;
+  padding: 0.35rem 0.9rem; border-radius: 999px;
+  background: var(--ng-alpha); border: 1px solid rgba(0,230,118,0.2);
+  color: var(--ng-dim);
+}
+.lu-item-light {
+  background: rgba(0,230,118,0.1) !important;
+  border-color: rgba(0,230,118,0.25) !important;
+  color: rgba(255,255,255,0.85) !important;
+}
+
+/* ── Preistabelle (Mini in Karte) ───────────────── */
+.preistabelle {
+  background: var(--white);
+  border: 1px solid rgba(0,230,118,0.1);
+  border-radius: var(--r-md);
+  overflow: hidden; margin-bottom: 1.3rem;
+}
+.preistabelle-dark {
+  background: rgba(255,255,255,0.06) !important;
+  border-color: rgba(0,230,118,0.15) !important;
+}
+.pt-mini-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.55rem 1rem; border-bottom: 1px solid rgba(0,230,118,0.07);
+  font-size: 0.84rem;
+}
+.pt-mini-row:last-child { border-bottom: none; }
+.pt-mini-row span { color: var(--t3); }
+.pt-mini-row strong { color: var(--t1); font-family: var(--fd); font-weight: 700; }
+.pt-mini-dark span  { color: rgba(255,255,255,0.5) !important; }
+.pt-mini-dark strong { color: white !important; }
+
+/* ── Gold Paket ─────────────────────────────────── */
+.paket-gold {
+  background: linear-gradient(135deg, rgba(255,215,0,0.04), rgba(255,180,0,0.02)) !important;
+  border-color: rgba(255,200,0,0.25) !important;
+}
+.paket-gold:hover { border-color: rgba(255,200,0,0.45) !important; box-shadow: 0 8px 40px rgba(255,200,0,0.1) !important; }
+.pc-tier-gold {
+  display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 0.25rem 0.8rem; border-radius: 999px; margin-bottom: 1rem;
+  background: rgba(255,200,0,0.15); color: #b8860b;
+  border: 1px solid rgba(255,200,0,0.3);
+}
+.pc-btn-gold {
+  display: inline-flex; align-items: center; font-size: 0.84rem; font-weight: 700;
+  color: #b8860b; padding: 0.5rem 1.3rem; border-radius: var(--r-xs);
+  border: 1.5px solid rgba(255,200,0,0.4);
+  font-family: var(--fd); transition: all 0.25s;
+}
+.pc-btn-gold:hover { background: rgba(255,200,0,0.15); border-color: rgba(255,200,0,0.6); }
+
+/* ── Außenreinigung Section ─────────────────────── */
+.s-aussen { background: var(--t1); overflow: hidden; }
+.aussen-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(0,230,118,0.06), transparent 70%),
+              radial-gradient(ellipse 30% 40% at 10% 80%, rgba(21,101,192,0.04), transparent 60%);
+}
+.pakete-grid-2 { grid-template-columns: repeat(2, 1fr) !important; max-width: 900px; margin: 0 auto; }
+
+/* Dark Paket Card */
+.paket-card-dark {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(0,230,118,0.15) !important;
+}
+.paket-card-dark:hover { background: rgba(255,255,255,0.07) !important; border-color: rgba(0,230,118,0.3) !important; }
+.paket-aussen-premium {
+  border-color: rgba(0,230,118,0.35) !important;
+  box-shadow: 0 8px 40px rgba(0,230,118,0.08) !important;
+}
+.pc-tier-dark {
+  display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 0.22rem 0.7rem; border-radius: 999px; margin-bottom: 1rem;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.6);
+}
+.pc-list-dark li { color: rgba(255,255,255,0.65) !important; }
+.pc-list-dark li::before { color: var(--ng) !important; }
+.pc-btn-outline-light {
+  display: inline-flex; align-items: center; font-size: 0.84rem; font-weight: 600;
+  color: white; padding: 0.5rem 1.2rem; border-radius: var(--r-xs);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  font-family: var(--fd); transition: all 0.25s;
+}
+.pc-btn-outline-light:hover { border-color: var(--ng); color: var(--ng); background: rgba(0,230,118,0.08); }
+
+/* ── Preise Blocks ──────────────────────────────── */
+.preise-block { margin-bottom: 2.5rem; }
+.pb-header {
+  margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.8rem;
+}
+.pb-title {
+  font-family: var(--fd); font-size: 1.1rem; font-weight: 700;
+  color: var(--t1);
+}
+
+/* ── CoresetupStudio Credit ─────────────────────── */
+.ft-credit {
+  max-width: 1240px; margin: 0 auto;
+  padding: 0.8rem 2rem 1.2rem;
+  font-size: 0.76rem; color: rgba(255,255,255,0.2);
+  text-align: center;
+}
+.ft-credit a {
+  color: var(--ng);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+.ft-credit a:hover {
+  color: var(--ng);
+  text-shadow: 0 0 12px var(--ng-glow);
+}
+
+/* ── Mobile Responsive additions ───────────────── */
+@media (max-width: 900px) {
+  .pakete-grid-2 { grid-template-columns: 1fr !important; }
+  .lu-grid { gap: 0.5rem; }
+}
+@media (max-width: 600px) {
+  .nav-logo-img { height: 34px; }
+  .ft-logo-img  { height: 40px; }
+  .preistabelle { font-size: 0.8rem; }
+}
